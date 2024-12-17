@@ -13,6 +13,7 @@ def setup_google_maps(api_key):
     Returns:
     - gmaps (Client): An instance of the Google Maps client.
     """
+    # Initialize the Google Maps client using the provided API key
     gmaps = googlemaps.Client(key=api_key)
     return gmaps
 
@@ -27,6 +28,7 @@ def fetch_coordinates(gmaps, location_name):
     Returns:
     - coordinates (tuple): A tuple (latitude, longitude) representing the location's coordinates.
     """
+    # Use the geocode API to get the location details
     geocode_result = gmaps.geocode(location_name)
     if geocode_result:
         location = geocode_result[0]['geometry']['location']
@@ -76,3 +78,4 @@ if __name__ == "__main__":
 # 2. Install the googlemaps library using pip:
 #    pip install -U googlemaps
 # 3. Replace 'YOUR_GOOGLE_MAPS_API_KEY' with your actual API key in the script.
+# 4. Run the script to see the example usage of fetching coordinates and map data.

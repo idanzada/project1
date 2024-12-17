@@ -14,26 +14,28 @@ The Drowning Detection System aims to develop a system capable of locating a dro
 - **Optical Cameras**: High resolution but ineffective in low visibility conditions.
 - **Machine Learning Models**: CNNs and RNNs for image recognition and sequence prediction.
 
-### Running the Simulation Prototype
+### Running the Drowning Detection Simulation
 
-To run the simulation prototype, follow these steps:
+To run the drowning detection simulation, follow these steps:
 
-1. **Install Dependencies**:
-   Ensure you have `matplotlib` installed for visualization.
-   ```bash
-   pip install matplotlib
-   ```
+1. **Prerequisites**:
+   - Ensure you have Python 3.x installed.
+   - Install the required libraries using pip:
+     ```bash
+     pip install matplotlib googlemaps
+     ```
 
-2. **Run the Simulation**:
-   Execute the `drowning_detection_simulation.py` script to visualize the detection and optimal throwing point calculation.
-   ```bash
-   python drowning_detection_simulation.py
-   ```
+2. **Google Maps API Key**:
+   - Obtain a Google Maps API key from the Google Cloud Console.
+   - Replace `'YOUR_GOOGLE_MAPS_API_KEY'` in the `google_maps_integration.py` file with your actual API key.
 
-### Prerequisites
+3. **Run the Simulation**:
+   - Execute the `drowning_detection_simulation.py` script to visualize the detection and optimal throwing point calculation.
+     ```bash
+     python drowning_detection_simulation.py
+     ```
 
-- Python 3.x
-- `matplotlib` library for plotting
+For more detailed information on the technologies and algorithms used, refer to the `drowning_detection_research.md` and `drowning_detection_algorithm.py` files.
 
 For more detailed information on the technologies and algorithms used, refer to the `drowning_detection_research.md` and `drowning_detection_algorithm.py` files.
 

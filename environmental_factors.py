@@ -12,7 +12,8 @@ def simulate_wind_speed():
     """
     # For simplicity, use a random value or a fixed pattern for wind speed
     # In a real scenario, this could be based on historical data or a complex model
-    wind_speed = 5.0  # Example fixed wind speed
+    # Example fixed wind speed; in a real scenario, this could vary
+    wind_speed = 5.0
     return wind_speed
 
 def simulate_wave_height():
@@ -23,7 +24,8 @@ def simulate_wave_height():
     - wave_height (float): Simulated wave height.
     """
     # For simplicity, use a random value or a fixed pattern for wave height
-    wave_height = 1.5  # Example fixed wave height
+    # Example fixed wave height; in a real scenario, this could vary
+    wave_height = 1.5
     return wave_height
 
 def simulate_day_night_cycle():
@@ -36,6 +38,7 @@ def simulate_day_night_cycle():
     current_hour = datetime.datetime.now().hour
     # Assume day is from 6 AM to 6 PM
     is_day = 6 <= current_hour < 18
+    # This could be adjusted for different seasons or locations
     return is_day
 
 def simulate_environmental_factors():
@@ -56,6 +59,7 @@ def simulate_environmental_factors():
     }
     
     return environmental_factors
+    # This function aggregates all environmental factors into a single dictionary
 
 # Example usage
 if __name__ == "__main__":
