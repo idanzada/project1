@@ -1,5 +1,42 @@
 # project1
 
+## Drowning Detection System
+
+### Project Overview
+
+The Drowning Detection System aims to develop a system capable of locating a drowning person and calculating the optimal point to deploy a life jacket. The system is designed to be completely autonomous and considers various environmental factors such as wind, waves, and current.
+
+### Technologies Researched
+
+- **Sonar Sensors**: Effective in low visibility conditions but limited to underwater detection.
+- **Infrared Sensors**: Useful in low light or nighttime conditions but have limited range.
+- **Thermal Cameras**: Effective in darkness and fog but expensive.
+- **Optical Cameras**: High resolution but ineffective in low visibility conditions.
+- **Machine Learning Models**: CNNs and RNNs for image recognition and sequence prediction.
+
+### Running the Simulation Prototype
+
+To run the simulation prototype, follow these steps:
+
+1. **Install Dependencies**:
+   Ensure you have `matplotlib` installed for visualization.
+   ```bash
+   pip install matplotlib
+   ```
+
+2. **Run the Simulation**:
+   Execute the `drowning_detection_simulation.py` script to visualize the detection and optimal throwing point calculation.
+   ```bash
+   python drowning_detection_simulation.py
+   ```
+
+### Prerequisites
+
+- Python 3.x
+- `matplotlib` library for plotting
+
+For more detailed information on the technologies and algorithms used, refer to the `drowning_detection_research.md` and `drowning_detection_algorithm.py` files.
+
 ## Integration with robot_car_v2 Model
 
 This project integrates with the `robot_car_v2` model to enhance its capabilities. The integration allows project1 to utilize advanced features provided by the `robot_car_v2` model.
