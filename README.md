@@ -14,9 +14,9 @@ The Drowning Detection System aims to develop a system capable of locating a dro
 - **Optical Cameras**: High resolution but ineffective in low visibility conditions.
 - **Machine Learning Models**: CNNs and RNNs for image recognition and sequence prediction.
 
-### Running the Drowning Detection Simulation
+### Running the 3-D Simulation
 
-To run the drowning detection simulation, follow these steps:
+To run the 3-D drowning detection simulation, follow these steps:
 
 1. **Prerequisites**:
    - Ensure you have Python 3.x installed.
@@ -36,6 +36,17 @@ To run the drowning detection simulation, follow these steps:
      ```
 
 For more detailed information on the technologies and algorithms used, refer to the `drowning_detection_research.md` and `drowning_detection_algorithm.py` files.
+
+### Running Unit Tests
+
+To run the unit tests, install pytest and execute:
+```bash
+pytest
+```
+Alternatively, you can use Python's unittest module:
+```bash
+python -m unittest
+```
 
 For more detailed information on the technologies and algorithms used, refer to the `drowning_detection_research.md` and `drowning_detection_algorithm.py` files.
 
